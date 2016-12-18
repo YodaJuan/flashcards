@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/YodaJuan/flashcards#readme",
   "dependencies": {
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0"
   }
 }
