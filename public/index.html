@@ -4,6 +4,23 @@
 	<title></title>
 </head>
 <body>
-<h1>Flashcards</h1>
+<div>
+	<h1>Flashcards</h1>
+</div>
+<form action="/" method="post">
+	<div>
+		<p>Name</p>
+		<input name="name"
+			   type="text" placeholder="Enter the word" />
+	</div>
+	<div>
+		<p>Content</p>
+		<input name="content"
+			   type="text" placeholder="Enter the definition">
+	</div>
+	<button type="submit">Submit</button>
+	<button type="reset">Cancel</button>
+</form>
+<a href="/flashcards">Go to your flashcards</a>
 </body>
 </html>
