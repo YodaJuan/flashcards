@@ -1,26 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Flashcard app</title>
+	<link rel ="stylesheet" type="text/css" href="assets/styles.css">
 </head>
 <body>
-<div>
-	<h1>Flashcards</h1>
-</div>
-<form action="/" method="post">
-	<div>
-		<p>Name</p>
-		<input name="name"
-			   type="text" placeholder="Enter the word" />
+	<div class="container">
+		<div class="row">
+			<div class="col-2 hidden"></div>
+			<div class="col-8">
+				<h1>Flashcards</h1>
+			</div>
+			<div class="col-2 hidden"></div>
+		</div>
+		<form action="/" method="post">
+			<div>
+				<p class="myclass">Name</p>
+				<input name="name"
+				type="text" placeholder="Enter the word" />
+			</div>
+			<div>
+				<p>Content</p>
+				<input name="content"
+				type="text" placeholder="Enter the definition">
+			</div>
+			<button type="submit">Submit</button>
+			<button type="reset">Cancel</button>
+		</form>
+		<a href="/flashcards.html">Go to your flashcards</a>
 	</div>
-	<div>
-		<p>Content</p>
-		<input name="content"
-			   type="text" placeholder="Enter the definition">
-	</div>
-	<button type="submit">Submit</button>
-	<button type="reset">Cancel</button>
-</form>
-<a href="/flashcards.html">Go to your flashcards</a>
 </body>
 </html>

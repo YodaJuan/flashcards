@@ -6,7 +6,7 @@ var app = express(); 	// instantiating the express library
 app.use('/', express.static(__dirname + '/public'));
 
 // GET /static/style.css etc.
-app.use('/static', express.static(__dirname + '/public/assets'));
+app.use('/assets', express.static(__dirname + '/public/assets'));
 
 app.set('view engine', 'pug')
 
@@ -28,7 +28,7 @@ response.redirect('/');
 
 // render flashcard template using jade/pub
 app.get('/myflashcards', function (req, res) {
-    res.render('myflashcards', flashcards);
+    res.render('myflashcards.pug', flashcards);
 });
 
 // render json of flashcards
